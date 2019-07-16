@@ -3,8 +3,8 @@ import ckan.plugins.toolkit as toolkit
 
 
 class HideGroupsPlugin(plugins.SingletonPlugin):
-    plugins.implements(plugins.IConfigurer)
-    plugins.implements(plugins.IFacets)
+    plugins.implements(plugins.IConfigurer, inherit=True)
+    plugins.implements(plugins.IFacets, inherit=True)
 
     def update_config(self, config):
         toolkit.add_template_directory(config, 'templates')
