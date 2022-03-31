@@ -8,7 +8,7 @@ facet box on the search page).
 
 To install, activate your CKAN virtualenv then run:
 
-    pip install -e 'git+git://github.com/okfn/ckanext-hidegroups.git#egg=ckanext-hidegroups'
+    pip install -e 'git+https://github.com/whiskyechobravo/ckanext-hidegroups.git#egg=ckanext-hidegroups'
 
 Then add the plugin to your CKAN config file (e.g. `development.ini` or
 `production.ini`), for example:
